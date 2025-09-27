@@ -1,0 +1,12 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #3b82f6; /* matching the top blue background */
+  margin: 0;
+  padding: 40px;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}

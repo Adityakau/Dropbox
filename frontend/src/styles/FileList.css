@@ -1,0 +1,110 @@
+
+.file-list {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #f0f4f8;
+}
+
+.file-list th,
+.file-list td {
+  padding: 14px 20px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.file-list td:first-child {
+  max-width: 0;
+}
+
+
+.file-list th:nth-child(1), .file-list td:nth-child(1) { width: 40%; }
+.file-list th:nth-child(2), .file-list td:nth-child(2),
+.file-list th:nth-child(3), .file-list td:nth-child(3) { width: 15%; }
+.file-list th:nth-child(4), .file-list td:nth-child(4) {
+  width: 30%;
+  min-width: 180px;
+}
+
+.file-list thead {
+  background-color: #f7f9fc; /* A very light, modern gray/blue header */
+  font-weight: 700; /* Bolder header text */
+  color: #4a5568; /* Darker text for contrast */
+}
+
+.file-list tbody tr {
+  /* Remove harsh bottom border, rely on hover/background for separation */
+  border-bottom: none;
+  transition: background-color 0.2s ease;
+}
+
+/* Modern Hover Effect: Makes the row highlight subtly when moused over */
+.file-list tbody tr:hover {
+  background-color: #eef2f8; /* Light blue on hover */
+}
+
+.file-list tbody tr:last-child {
+  border-bottom: none;
+}
+
+.file-list button {
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease; /* Transition all properties for smoothness */
+  font-weight: 600; /* Bolder button text */
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2); /* Subtle button shadow */
+  white-space: nowrap;
+}
+
+.file-list button:hover {
+  background-color: #2563eb;
+  /* Lift the button slightly on hover */
+  box-shadow: 0 6px 10px rgba(37, 99, 235, 0.3);
+  transform: translateY(-1px);
+}
+
+
+@media (max-width: 600px) {
+  .file-list {
+    font-size: 0.9em;
+  }
+
+  .file-list th:nth-child(2),
+  .file-list td:nth-child(2),
+  .file-list th:nth-child(3),
+  .file-list td:nth-child(3) {
+    display: none;
+  }
+
+  .file-list th:nth-child(1),
+  .file-list td:nth-child(1) {
+    width: 60%;
+  }
+
+  .file-list th:nth-child(4),
+  .file-list td:nth-child(4) {
+    width: 40%;
+    min-width: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .file-list button {
+    padding: 6px 8px;
+    margin-right: 4px;
+    font-size: 0.9em;
+    border-radius: 16px;
+  }
+}

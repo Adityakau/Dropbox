@@ -1,0 +1,45 @@
+.preview-container {
+  padding: 24px;
+  background: #fff;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.preview-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.preview-actions button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 14px;
+}
+
+.preview-actions button:hover {
+  background: #4338ca;
+}
+
+.preview-content {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 300px;
+  background: #f9fafb;
+}
