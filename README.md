@@ -19,9 +19,9 @@ It allows users to:
 
 🚀 Project Structure
 
-project-root/
-├── backend/       # Java spring boot (REST APIs)
-├── frontend/      # React frontend (UI for users)
+Dropbox/
+├── backend/       
+├── frontend/
 
 ---
 
