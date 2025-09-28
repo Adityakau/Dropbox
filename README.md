@@ -10,7 +10,7 @@ Frontend: React (modern UI for interacting with files)
 
 
 It allows users to:
-✅ Upload supported files (txt, png, jpg, jpeg, json)
+✅ Upload supported files (txt, png, jpg, jpeg, json, pdf)
 ✅ List all uploaded files
 ✅ Preview file contents (text, image, JSON)
 ✅ Download files
@@ -125,6 +125,8 @@ Preview:
 
 .png/.jpg/.jpeg → Image preview
 
+.pdf - pdf view 
+
 
 Download: Click a button to download any file.
 
@@ -173,6 +175,7 @@ Files are shown in cards with icons, preview, and action buttons.
 
 .jpeg
 
+.pdf
 
 > Other formats will be rejected during upload.
 
